@@ -22,7 +22,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     directionsService.route({
         origin: origin,
         destination: destination,
-        travelMode: 'DRIVING'
+        travelMode: 'BIKING'
     }, function(response, status) {
       if (status === 'OK') {
         directionsDisplay.setDirections(response);
